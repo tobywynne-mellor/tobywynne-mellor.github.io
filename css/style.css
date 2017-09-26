@@ -1,0 +1,169 @@
+.red {
+  color:tomato;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: lightgreen;
+}
+
+.title, .subtitle {
+  font-family:"Lucida Console", Monaco, monospace;
+}
+
+.header {
+  height: 500px;
+}
+
+.title {
+  text-align: right;
+}
+
+.subtitle {
+  float: right;
+}
+
+.boxed {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  -webkit-clip-path: circle(33.2% at 57% 43%);
+  clip-path: circle(33.2% at 57% 43%);
+  margin:auto;
+  float: left;
+}
+.boxed .item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(https://pbs.twimg.com/profile_images/874363185003888642/PMEhfUG-_400x400.jpg);
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  background-blend-mode: darken;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.boxed .item--r {
+  background-color: red;
+  -webkit-transform: translate(3px, -3px);
+          transform: translate(3px, -3px);
+}
+.boxed .item--g {
+  background-color: green;
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+}
+.boxed .item--b {
+  background-color: blue;
+  -webkit-transform: translate(0px, 6px);
+          transform: translate(0px, 6px);
+}
+.boxed:hover .item {
+  -webkit-transform: translate(0px, 0px) !important;
+          transform: translate(0px, 0px) !important;
+}
+
+
+.row {
+  margin-bottom: 50px;
+}
+.scrolltxt {
+  text-align: center;
+  color: black;
+}
+.about {
+  background-color: #3B413C;
+  padding: 20px;
+  box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.5);
+}
+
+.intro {
+  font-size: 2rem;
+  text-align: justify;
+  color:#F9FDFA;
+}
+
+.social {
+  text-align: center;
+  margin:auto;
+  background-color:;
+  padding: 30px 20px 0px 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: -20px;
+}
+
+img {
+  height:200px;
+  margin: 10px;
+}
+
+img:hover {
+  opacity: 0.4;
+}
+
+.portfolio {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align:center;
+  margin: 10px;
+  padding:20px;
+}
+
+.footer {
+  width: 100vw;
+  
+  
+}
+
+@media (max-width: 575px) {
+  .subtitle {
+    display: none;
+    float: center;
+  }
+  .header {
+    height: 100%;
+  }
+  .boxed {
+    float: none;
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+  }
+  .title {
+    text-align: center;
+  }
+  .scrolltxt {
+    margin-bottom: 20px;
+  }
+}
+
+.navbar {
+  margin-left: 10px;
+}
+
+.hold {
+  position: relative;
+  width: 307.69px;
+  margin: auto;
+}
+
+.imgdesc {
+  position: absolute;
+  left: 77.9225px;
+  top: 50px;
+}
+
+img.logo {
+  height: 80px;
+}
