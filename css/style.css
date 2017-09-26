@@ -1,64 +1,45 @@
-
-.header{
-	position: relative;
-	height: 250px;
-	background: #232526;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-	
-
-
+.red {
+  color:tomato;
 }
 
-.name{
-	position: absolute;
-	color: white;
-	left: 50px;
+.bold {
+  font-weight: bold;
 }
 
-
-.bold { 
-	font-weight: bold;
- }
-.red { 
-	color: tomato; 
-}
-.green { 
-	color: lightgreen;
- }​
-
-
-
-
-.desc {
-	position: absolute;
-	color: white;
-	left: 50px;
-	top: 1000px;
-
-}
-.dp {
-	position: absolute;	
+.green {
+  color: lightgreen;
 }
 
+.title, .subtitle {
+  font-family:"Lucida Console", Monaco, monospace;
+}
+
+.header {
+  height: 500px;
+}
+
+.title {
+  text-align: right;
+}
+
+.subtitle {
+  float: right;
+}
 
 .boxed {
   width: 300px;
   height: 300px;
-  right: -25px;
   overflow: hidden;
-  position: absolute;
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: relative;
+  -webkit-clip-path: circle(33.2% at 57% 43%);
+  clip-path: circle(33.2% at 57% 43%);
+  margin:auto;
+  float: left;
 }
 .boxed .item {
   width: 100%;
   height: 100%;
   position: absolute;
-  right: 30px;
-  top: 0;
   background-image: url(https://pbs.twimg.com/profile_images/874363185003888642/PMEhfUG-_400x400.jpg);
   background-size: cover;
   background-position: center;
@@ -87,4 +68,102 @@
 .boxed:hover .item {
   -webkit-transform: translate(0px, 0px) !important;
           transform: translate(0px, 0px) !important;
+}
+
+
+.row {
+  margin-bottom: 50px;
+}
+.scrolltxt {
+  text-align: center;
+  color: black;
+}
+.about {
+  background-color: #3B413C;
+  padding: 20px;
+  box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.5);
+}
+
+.intro {
+  font-size: 2rem;
+  text-align: justify;
+  color:#F9FDFA;
+}
+
+.social {
+  text-align: center;
+  margin:auto;
+  background-color:;
+  padding: 30px 20px 0px 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: -20px;
+}
+
+img {
+  height:200px;
+  margin: 10px;
+}
+
+img:hover {
+  opacity: 0.4;
+}
+
+.portfolio {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align:center;
+  margin: 10px;
+  padding:20px;
+}
+
+.footer {
+  width: 100vw;
+  
+  
+}
+
+@media (max-width: 575px) {
+  .subtitle {
+    display: none;
+    float: center;
+  }
+  .header {
+    height: 100%;
+  }
+  .boxed {
+    float: none;
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+  }
+  .title {
+    text-align: center;
+  }
+  .scrolltxt {
+    margin-bottom: 20px;
+  }
+}
+
+.navbar {
+  margin-left: 10px;
+}
+
+.hold {
+  position: relative;
+  width: 307.69px;
+  margin: auto;
+}
+
+.imgdesc {
+  position: absolute;
+  left: 77.9225px;
+  top: 50px;
+}
+
+img.logo {
+  height: 80px;
 }

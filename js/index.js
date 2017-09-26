@@ -12,7 +12,7 @@ $(document).ready(function(){
     text = str.slice(0, ++i);
     if (text === str) return;
 
-    document.getElementById('name').innerHTML = text;
+    document.getElementById('title').innerHTML = text;
 
     var char = text.slice(-1);
     if( char === '<' ) isTag = true;
