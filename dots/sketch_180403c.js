@@ -17,10 +17,7 @@ function setup() {
 function draw() {
   clear();
   background(51);
-  fill(255);
-  textSize(32);
-  text(Math.round(frameRate()), width/2, height/2);
-
+  
   for(var i = 0; i < balls.length; i++)
   {
     var ball = balls[i];
