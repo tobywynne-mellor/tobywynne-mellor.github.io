@@ -10,7 +10,7 @@ switch ($request_uri[0]) {
         break;
     // About page
     case '/carif':
-        header('Location: http://tobywynnemellor.com/carif.html');
+        header('Location: https://tobywynne-mellor.github.io/carif.html');
         break;
     // Everything else
     default:
