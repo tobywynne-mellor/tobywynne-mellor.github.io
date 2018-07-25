@@ -148,8 +148,8 @@ a:link, a:visited, a:hover, a:active {
 .item {
   opacity: 0;
   transform: translateX(40px);
-   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.6s ease-in-out;
+   -webkit-transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out;
 }
 
 .item:hover {
