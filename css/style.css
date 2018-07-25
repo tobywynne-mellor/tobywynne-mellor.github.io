@@ -156,6 +156,7 @@ a:link, a:visited, a:hover, a:active {
   transform: translateX(10px);
   color: white;
   background-color: #3668da;
+  opacity: 0.8;
 }
 
 .is-showing {
@@ -175,10 +176,6 @@ a:link, a:visited, a:hover, a:active {
 .label {
   font-size: 8px;
   color: black;
-}
-
-.item:hover {
-  opacity: 0.8;
 }
 
 .item-img {
