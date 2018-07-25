@@ -155,6 +155,8 @@ a:link, a:visited, a:hover, a:active {
 
 .item:hover {
   transform: translateX(10px);
+  color: white;
+  background-color: #3668da;
 }
 
 .is-showing {
