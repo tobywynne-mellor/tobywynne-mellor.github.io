@@ -8,9 +8,13 @@ switch ($request_uri[0]) {
     case '/':
         header('Location: http://tobywynnemellor.com');
         break;
-    // About page
+    // carif page
     case '/careif':
         header('Location: https://tobywynne-mellor.github.io/careif.html');
+        break;
+    //projects page
+    case '/projects':
+        header('Location: https://tobywynne-mellor.github.io/projects.html');
         break;
     // Everything else
     default:
