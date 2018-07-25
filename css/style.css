@@ -11,15 +11,9 @@ body {
 @media (min-width: 400px) {
   .container {
     width: 400px;
-    height: calc(100vh - 114px);
   }
 }
 
-@media (max-height: 700px){
-  .container {
-    height: 600px;
-  }
-}
 
 .social {
   display: flex;
@@ -133,6 +127,10 @@ a:link, a:visited, a:hover, a:active {
   }
   
   .instaBtn {
+    opacity: 1;
+  }
+
+  .fa-codepen, .fa-github {
     opacity: 1;
   }
 }
