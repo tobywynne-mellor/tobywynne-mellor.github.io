@@ -141,6 +141,10 @@ a:link, a:visited, a:hover, a:active {
   transition: all 0.6s ease-in-out;
 }
 
+.fa-codepen:hover, .fa-github:hover {
+  opacity: 0.5 !important;
+}
+
 .projects:hover h1 a i.fa-codepen, .projects:hover h1 a i.fa-github{
   opacity: 1;
 }
@@ -154,8 +158,6 @@ a:link, a:visited, a:hover, a:active {
 
 .item:hover {
   transform: translateX(10px);
-  color: white;
-  background-color: #3668da;
   opacity: 0.8;
 }
 
