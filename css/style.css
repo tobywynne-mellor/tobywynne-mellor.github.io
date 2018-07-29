@@ -119,11 +119,15 @@ a:link, a:visited, a:hover, a:active {
 /* show insta link and pics when on mobile */
 @media (max-width: 500px){
   .instaPic.instapicone{
-    transform: translate(40px, 0px) rotate(20deg);
+    transform: translate(90px, -10px) rotate(0deg);
+    height: 67px;
+    width:  67px;
   }
-  
+
   .instaPic.instapictwo{
-    transform: translate(70px, 0px) rotate(40deg);
+    transform: translate(110px, 30px) rotate(0);
+    height: 67px;
+    width:  67px;
   }
   
   .instaBtn {
