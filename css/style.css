@@ -90,13 +90,8 @@ a:link, a:visited, a:hover, a:active {
   transform: translate(70px, 0px) rotate(40deg);
 }
 
-.instapicone{
-  opacity: 0.8;
-}
-
 .instapictwo {
   z-index: -1;
-  opacity: 0.6;
 }
 
 .instaBtn {
