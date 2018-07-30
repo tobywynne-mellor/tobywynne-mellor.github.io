@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     var feed = new Instafeed({
@@ -9,10 +9,10 @@ $(document).ready(function() {
         resolution: "low_resolution",
         template: '<img class="instaPic" src="{{image}}" alt="instafeed_img"/>',
         after: function () {
-            $( "img:eq(1)" ).addClass('instapicone');
-            $( "img:eq(2)" ).addClass('instapictwo');
+            $("img:eq(1)").addClass('instapicone');
+            $("img:eq(2)").addClass('instapictwo');
             console.log("done");
-        
+
         }
         // template: '<div class="card"><img class="card-img instafeed_img" src="{{image}}" alt="Card image"></div>',
         // after: function () {
@@ -26,9 +26,3 @@ $(document).ready(function() {
     feed.run();
 
 });
-
-//https://codeofaninja.com/tools/find-instagram-user-id
-//http://instagram.pixelunion.net/
-
-//access token 195697929.1677ed0.d876b5ec959648de8137b14601591839
-//user id 5787145626
