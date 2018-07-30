@@ -71,6 +71,7 @@ a:link, a:visited, a:hover, a:active {
   transform: translateX(-200px);
   position: relative;
   margin: 30px 0 30px 0;
+  width: 200px;
 }
 
 #profilepic {
@@ -188,6 +189,7 @@ a:link, a:visited, a:hover, a:active {
   transform: translateX(40px);
    -webkit-transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out, transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  max-width: 510px;
 }
 
 .item:hover {
