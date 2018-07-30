@@ -2,15 +2,6 @@
 <html lang="en" >
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123036931-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-123036931-1');
-</script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,7 +67,7 @@
     <div class="about">
         <h1>About me</h1>
         <h5 class="text-muted">
-            I'm an aspiring Devloper/Entrepreneur. Currently studying and seeking internships &amp; opportunites. <a href="about.html">Read more...</a>
+            I'm <b><span id="age"></span></b> years old. I'm in my second year of University. <a href="about.html">Read more...</a>
           </h5>
       </div>
 
@@ -112,6 +103,19 @@
   <script  src="js/instafeed.min.js"></script>
   <script  src="js/custom.js"></script>
 
+  <script>
+    var age = document.getElementById("age");
+    var bday = new Date(1998, 09, 06, 00, 00, 00);
+
+    function timeSince(date){
+      var seconds = Math.floor((new Date() - date) / 1000);
+      var interval = Math.floor(seconds / 31536000);
+      return interval;
+    }
+
+    age.innerHTML = timeSince(bday);
+    
+  </script>
 
 
 

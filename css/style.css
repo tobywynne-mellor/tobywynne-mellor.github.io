@@ -110,6 +110,14 @@ a:link, a:visited, a:hover, a:active {
   z-index: -1;
 }
 
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 .instaBtn {
   position: absolute;
   left: 235px;
@@ -122,6 +130,11 @@ a:link, a:visited, a:hover, a:active {
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   border-radius: 1.25rem;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.instaBtn:hover {
+  transform: scale(1.5);
 }
 
 .instaBtn i {
@@ -158,11 +171,12 @@ a:link, a:visited, a:hover, a:active {
 
 .fa-codepen, .fa-github {
   opacity: 0;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .fa-codepen:hover, .fa-github:hover {
-  opacity: 0.5 !important;
+  opacity: 0.7 !important;
+  transform: scale(1.1);
 }
 
 .projects:hover h1 a i.fa-codepen, .projects:hover h1 a i.fa-github{
