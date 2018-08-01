@@ -8,9 +8,13 @@ div {
 .about, .projects, .services, .contact {
   margin-bottom: 15px;
   margin-top: 15px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+.about:hover, .projects:hover, .services:hover, .contact:hover  {
+  transform: scale(1.01);
+}
 
 
 
