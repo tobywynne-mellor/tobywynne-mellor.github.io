@@ -12,8 +12,11 @@ div {
 
 
 
+
+
 body {
   margin-bottom: 50px;
+  background-color: rgb(244,247,246);
 }
 
 /* .container {
@@ -82,7 +85,6 @@ a:link, a:visited, a:hover, a:active {
   top: 17px;
   z-index: 1;
   height: 100px;
-  transition: all 0.6s ease-in;
 }
 
 
@@ -98,7 +100,7 @@ a:link, a:visited, a:hover, a:active {
   position: absolute;
   left: 159px;
   top: 17px;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .profile:hover .instaPic.instapicone{
