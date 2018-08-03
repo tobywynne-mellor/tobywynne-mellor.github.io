@@ -9,9 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -30,32 +29,52 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
-      <h3>I'm an aspiring Developer/Entrepreneur</br> currently studying and
-        <b>seeking internships &amp; opportunites</b>.</h3>
+      <h4 class="introText">I'm an aspiring Developer/Entrepreneur currently studying and <b>seeking internships &amp; opportunites</b>.</h4>
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-lg-6">
+          <div class="about">
+            <img src="me.png" alt="" class="me">
+            <p class="text-muted">
+              I'm
+              <b>
+                <span id="age"></span>
+              </b> years old. I'm in my second year of University.
+              <u>
+                <a href="/about">Read more...</a>
+              </u>
+            </p>
+          </div>
 
-
+          <div class="contact" id="contact">
+            <div class="social">
+            <a href="mailto:tobywynnemellor@gmail.com" class="button">Email
+              <i class="fas fa-envelope-square"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/tobywynne-mellor" class="button">Linkedin
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
           <div class="projects">
-            <h1>Projects
-              <a target="_blank" href="https://github.com/tobywynne-mellor/">
-                <i class="fab fa-github"></i>
-              </a>
-              <a target="_blank" href="https://codepen.io/jirugi/">
-                <i class="fab fa-codepen"></i>
-              </a>
-            </h1>
-            <h5 class="text-muted">Here are some of my featured projects - which include side-projects, university projects and commissioned &amp;
-              voluntary work.</h5>
-            <a target="_blank" href="https://github.com/tobywynne-mellor/trading-simulator">
+            <h1>
+            <a target="_blank" href="https://github.com/tobywynne-mellor/">
+              <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://codepen.io/jirugi/">
+              <i class="fab fa-codepen"></i>
+            </a>
+          </h1>
+            <a href="description.html?stock-trading-simulator">
               <div class="item">
                 <div class="item-text">
-                  <h3>Stock Trading Simulator </h3>
-                  <p class="">I developed an object-orientated desktop stock trading simulator in Java. I used JavaFX for the UI.</p>
-                  <span>Java
+                  <h5>Stock Trading Simulator </h5>
+                  <p class="text-muted">An object-orientated desktop stock trading simulator in Java + JavaFX. I used JavaFX for the UI.</p>
+                  <span class="tag">Java
                     <i class="fab fa-java"></i>
                   </span>&nbsp;&nbsp;
-                  <span>Desktop
+                  <span class="tag">Desktop
                     <i class="fas fa-desktop"></i>
                   </span>
                 </div>
@@ -65,16 +84,16 @@
                 </div>
               </div>
             </a>
-            <a target="_blank" href="https://github.com/tobywynne-mellor/kanye-sentiment-analysis">
+            <a href="description.html?kanye-sentiment-analysis">
               <div class="item">
                 <div class="item-text">
-                  <h3>Kanye Sentiment Analysis Twitter Bot</h3>
-                  <p class="">I used Node, the Twitter API and IBM Wason Tone Analyzer API to create a bot which analyses Kanye's tweets.
+                  <h5>Kanye Sentiment Analysis Twitter Bot</h5>
+                  <p class="text-muted">I used Node, the Twitter API and IBM Wason Tone Analyzer API to create a bot which analyses Kanye's tweets.
                     I then hosted the bot on Heroku and waited to Kanye to tweet!</p>
-                  <span>Node
+                  <span class="tag">Node
                     <i class="fab fa-node"></i>
                   </span>&nbsp;&nbsp;
-                  <span>Cloud
+                  <span class="tag">Cloud
                     <i class="fas fa-cloud"></i>
                   </span>
                 </div>
@@ -84,47 +103,8 @@
               </div>
             </a>
             <div class="social">
-              <a href="/projects" id="or" class="btn btn-primary">SEE ALL PROJECTS</a>
+              <a href="/projects" class="button" >All Projects</a>
             </div>
-          </div>
-        </div>
-        <div class="col-xl-6">
-          <div class="about">
-            <h1>About me</h1>
-            <h5 class="text-muted">
-              I'm
-              <b>
-                <span id="age"></span>
-              </b> years old. I'm in my second year of University.
-              <u>
-                <a href="/about">Read more...</a>
-              </u>
-            </h5>
-          </div>
-
-          <div class="services">
-
-            <h1>Services</h1>
-            <h4>Need a website? Or anything code related? I'm avaiable for
-              <b>freelance</b>!</h4>
-            <ul>
-              <li>Full Stack Web Development</li>
-              <li>Web Design</li>
-              <li>Twitter Bot Development</li>
-              <li>Advice and Assistance</li>
-            </ul>
-
-          </div>
-
-          <div class="contact" id="contact">
-            <h1>Contact</h1>
-            <h4>Please don't hesitate to contact me!</h4>
-            <a id="or" href="mailto:tobywynnemellor@gmail.com" class="button btn btn-primary">Email
-              <i class="fas fa-envelope-square"></i>
-            </a>
-            <a id="or" target="_blank" href="https://www.linkedin.com/in/tobywynne-mellor" class="button btn btn-primary">Linkedin
-              <i class="fab fa-linkedin"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -133,8 +113,6 @@
   </body>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
-
-
   <script src="js/index.js"></script>
   <script src="js/instafeed.min.js"></script>
   <script src="js/custom.js"></script>

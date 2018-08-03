@@ -11,8 +11,6 @@ $(document).ready(function () {
         after: function () {
             $("img:eq(1)").addClass('instapicone');
             $("img:eq(2)").addClass('instapictwo');
-            console.log("done");
-
         }
         // template: '<div class="card"><img class="card-img instafeed_img" src="{{image}}" alt="Card image"></div>',
         // after: function () {

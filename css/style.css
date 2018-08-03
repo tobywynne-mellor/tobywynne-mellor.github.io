@@ -5,22 +5,87 @@ div {
 }
 
 
-.about, .projects, .services, .contact {
+.about, .projects, .contact {
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 30px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #eee;
+  padding: 15px;
+  padding-top: 25px;
+  border-radius: 10px;
+  position:relative;
 }
 
+.projects::before,.about::before,.contact::before {
+  font-family: monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  top: -20px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #ffeb3b;
+  padding: 5px;
+}
+
+.projects::before{
+  background-color: #ffeb3b;
+  content: 'Projects';
+  left: -10px;
+}
+
+.about::before {
+  background-color: #49C5B6;
+  color: #eee;
+  content: 'About me';
+  right: -10px;
+}
+
+.contact::before {
+  background-color:#f44336;
+  color: #eee;
+  content: 'Contact';
+  left: -10px;
+}
 
 .about:hover, .projects:hover, .services:hover, .contact:hover  {
   transform: scale(1.01);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.button {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color:#ffeb3b;
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #285AEB;
+  border-style: solid;
+  color: #eee;
+  border-width: 0px 3px 3px 0px;
+  transition: all 0.3s ease;
+  color: #222;
+}
 
+.button:active {
+  background-color: #285AEB;
+  color: #eee;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #285AEB;
+  color: #eee;
+}
 
 body {
   margin-bottom: 50px;
   background-color: rgb(244,247,246);
+}
+
+.tag {
+  background-color: #f4f7f6;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* .container {
@@ -35,38 +100,48 @@ body {
 
 } */
 
+.me {
+  width: 80px;
+  position: absolute;
+  top:-50px;
+  left: -20px;
+}
 
-
+.introText {
+  margin-bottom: 20px;
+}
 
 .social {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: black;
   margin-bottom: 10px;
 }
 
 .degree {
   position: absolute;
-  top: 75px;
-  left: 55px;
+  top: 78px;
+  left: -9px;
 }
 
 .name1 {
   position: absolute;
-  top: 20px;
-  left: 100px;
+  top: 15px;
+  left: 85px;
+  font-size: 2rem;
 }
 
 .name2 {
   position: absolute;
-  top: 45px;
-  left: 20px;
+  top: 47px;
+  left: -20px;
+  font-size: 2rem;
 }
 
 .email {
   position: absolute;
-  top: 95px;
-  left: 25px;
+  top: 97px;
+  left: -57px;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -77,7 +152,7 @@ a:link, a:visited, a:hover, a:active {
 .profile {
   height: 130px;
   left: 50%;
-  transform: translateX(-200px);
+  transform: translateX(-120px);
   position: relative;
   margin: 30px 0 30px 0;
   width: 200px;
@@ -89,6 +164,7 @@ a:link, a:visited, a:hover, a:active {
   top: 17px;
   z-index: 1;
   height: 100px;
+  border-radius: 10px;
 }
 
 
@@ -104,40 +180,36 @@ a:link, a:visited, a:hover, a:active {
   position: absolute;
   left: 159px;
   top: 17px;
+  border-radius: 10px;
   transition: all 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .profile:hover .instaPic.instapicone{
   transform: translate(40px, 0px) rotate(20deg);
+  border-radius: 10px;
 }
 
 .profile:hover .instaPic.instapictwo{
   transform: translate(70px, 0px) rotate(40deg);
+  border-radius: 10px;
 }
 
 .instapictwo {
   z-index: -1;
 }
 
-.btn {
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
 .instaBtn {
   position: absolute;
   left: 235px;
   z-index: 1;
+  width: 44px;
   top: 50px;
   opacity: 0;
   transition: opacity 0.6s ease;
   background: #d6249f;
   border: #d6249f;
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-  border-radius: 1.25rem;
+  border-radius: 15px;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
@@ -153,13 +225,14 @@ a:link, a:visited, a:hover, a:active {
 .instaBtn i {
   color: white;
   font-size: 30px;
+  margin-left: -2.5px;
 }
 
 .profile:hover .instaBtn {
   opacity: 1;
 }
 
-/* show insta link and pics when on mobile */
+/* show insta link and pics when on mobile
 @media (max-width: 500px){
   .instaPic.instapicone{
     transform: translate(90px, -10px) rotate(0deg);
@@ -176,16 +249,23 @@ a:link, a:visited, a:hover, a:active {
   .instaBtn {
     opacity: 1;
   }
-
-  .fa-codepen, .fa-github {
-    opacity: 1 !important;
-  }
-}
+} */
 
 .fa-codepen, .fa-github {
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  position: absolute;
 }
+
+.fa-codepen{
+  left: 110px;
+  top: -17px; 
+}
+
+.fa-github {
+  left: 161px;
+  top: -17px; 
+}
+
 
 .fa-codepen:hover, .fa-github:hover {
   opacity: 0.7 !important;
