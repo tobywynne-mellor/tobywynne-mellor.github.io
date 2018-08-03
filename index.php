@@ -20,6 +20,10 @@ switch ($request_uri[0]) {
     case '/about':
         header('Location: http://tobywynnemellor.com/about.html');
         break;
+    //about page
+    case '/description':
+        header('Location: http://tobywynnemellor.com/description.html');
+        break;
     // Everything else
     default:
         header('HTTP/1.0 404 Not Found');
