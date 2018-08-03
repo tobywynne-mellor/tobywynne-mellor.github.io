@@ -127,15 +127,13 @@ body {
 .name1 {
   position: absolute;
   top: 15px;
-  left: 85px;
-  font-size: 2rem;
+  left: 68px;
 }
 
 .name2 {
   position: absolute;
-  top: 47px;
-  left: -20px;
-  font-size: 2rem;
+  top: 54px;
+  left: -65px;
 }
 
 .email {
