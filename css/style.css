@@ -6,38 +6,68 @@ div {
 
 
 .about, .projects, .contact {
-  margin-bottom: 15px;
-  margin-top: 30px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #eee;
   padding: 15px;
   padding-top: 25px;
   border-radius: 10px;
   position:relative;
+  max-width: 600px;
+  margin: 50px auto;
 }
+
+@keyframes float {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+  }
+  25% {
+    transform: translatey(-7px);
+  }
+	50% {
+		/* box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(-3px);
+  }
+  75%{
+    transform: translatey(-5px);
+  }
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+}
+
 
 .projects::before,.about::before,.contact::before {
   font-family: monospace;
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   font-weight: 700;
   top: -20px;
   border-radius: 10px;
   position: absolute;
   background-color: #ffeb3b;
   padding: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects::before{
   background-color: #ffeb3b;
   content: 'Projects';
   left: -10px;
+  
+}
+
+.projects:hover::before, .contact:hover::before, .about:hover::before  {
+  transform: translateY(-10px);
+  font-size: 1.6rem;
+  /* animation: float 2s infinite; */
 }
 
 .about::before {
   background-color: #49C5B6;
   color: #eee;
   content: 'About me';
-  right: -10px;
+  left: -10px;
 }
 
 .contact::before {
@@ -45,6 +75,7 @@ div {
   color: #eee;
   content: 'Contact';
   left: -10px;
+
 }
 
 .about:hover, .projects:hover, .services:hover, .contact:hover  {
@@ -104,7 +135,7 @@ body {
   width: 80px;
   position: absolute;
   top:-50px;
-  left: -20px;
+  right: -20px;
 }
 
 .introText {
@@ -167,7 +198,7 @@ a:link, a:visited, a:hover, a:active {
 
 
 #or{
-  color: white;
+  color: #f4f7f6;
   z-index: 1000;
   position: relative;
 }
@@ -324,10 +355,24 @@ a:link, a:visited, a:hover, a:active {
   font-size: 14px;
 }
 
-.contact {
-  margin-bottom: 50px;
-}
 
 
 /* clip(0px, 110px, 70px, 0px); */
 
+.scroller {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  bottom: 3%;
+  right: 3%;
+  background-color: #ffeb3b;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3px;
+  visibility: hidden;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.3s ease-in-out;
+}
