@@ -16,6 +16,14 @@ var projects = [
         "link": "https://github.com/tobywynne-mellor/trading-simulator"
     },
     {
+        "id": "?qmbes",
+        "heading": "Queen Mary Business and Enterprise Society Website",
+        "img": "images/qmbes.png",
+        "description": "I developed the QMBES website.",
+        "details": '<span class="tag">MySQL <i class="<i class="fas fa-database"></i>"></i></span>&nbsp;&nbsp;<span class="tag">PHP <i class="fab fa-php"></i></span>',
+        "link": "https://qmbes.com"
+    },
+    {
         "id": "?kanye-sentiment-analysis",
         "heading": "Kanye Sentiment Analysis",
         "img": "images/kanye.png",
@@ -46,7 +54,16 @@ var projects = [
         "description": "A Javascript Wiki Search Interface. Get data from Wiki API.",
         "details": '<span class="tag">Javascript <i class="fab fa-js-square"></i></span>&nbsp;&nbsp;<span class="tag">CSS <i class="fab fa-css3-alt"></i></span>',
         "link": "https://codepen.io/jirugi/full/gRrXVm/"
+    },
+    {
+        "id": "?random-quote-generator",
+        "heading": "Random Quote Generator",
+        "img": "images/random-quote-generator.png",
+        "description": "A Javascript Random Quote Generator. Got quotes from forismatic.com API.",
+        "details": '<span class="tag">Javascript <i class="fab fa-js-square"></i></span>&nbsp;&nbsp;<span class="tag">CSS <i class="fab fa-css3-alt"></i></span>',
+        "link": "https://codepen.io/jirugi/full/owXzyP/"
     }
+    
 ];
 console.log("project: " + param);
 for (var i = 0; i < projects.length; i++) {

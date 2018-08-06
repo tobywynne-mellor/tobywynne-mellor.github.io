@@ -380,3 +380,7 @@ a:link, a:visited, a:hover, a:active {
   transform: translateY(-40px);
   transition: all 0.3s ease-in-out;
 }
+
+footer {
+  margin: auto;
+}
