@@ -12,11 +12,11 @@ $(window).scroll(function () {
 
 	if (scroll > 180) {
     $('.scroller').css("opacity", "1");
-    $('.scroller').css("transform", "translateX(0px)");
+    $('.scroller').css("transform", "translateY(0px)");
 		$('.scroller').css("visibility", "visible");
   }else {
     $('.scroller').css("opacity", "0");
-    $('.scroller').css("transform", "translateX(40px)");
+    $('.scroller').css("transform", "translateY(-40px)");
     $('.scroller').css("visibility", "hidden"); 
   }
 });

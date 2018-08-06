@@ -355,6 +355,10 @@ a:link, a:visited, a:hover, a:active {
   font-size: 14px;
 }
 
+.container {
+  max-width: 540px;
+}
+
 
 
 /* clip(0px, 110px, 70px, 0px); */
@@ -373,6 +377,6 @@ a:link, a:visited, a:hover, a:active {
   visibility: hidden;
   z-index: 1;
   opacity: 0;
-  transform: translateX(40px);
+  transform: translateY(-40px);
   transition: all 0.3s ease-in-out;
 }
