@@ -11,7 +11,7 @@ var projects = [
         "id": "?stock-trading-simulator",
         "heading": "Stock Trading Simulator",
         "img": "images/trading.png",
-        "description": "An object-orientated desktop stock trading simulator in Java + JavaFX. I used JavaFX for the UI.",
+        "description": "An object-orientated desktop stock trading simulator in Java. I used JavaFX for the UI.",
         "details": '<span class="tag">Java <i class="fab fa-java"></i></span>&nbsp;&nbsp;<span class="tag">Desktop <i class="fas fa-desktop"></i></span>',
         "link": "https://github.com/tobywynne-mellor/trading-simulator"
     },
@@ -22,6 +22,30 @@ var projects = [
         "description": "I used Node, the Twitter API and IBM Wason Tone Analyzer API to create a bot which analyses Kanye's tweets. I then hosted the bot on Heroku and waited to Kanye to tweet!",
         "details": '<span class="tag">Node <i class="fab fa-node"></i></span>&nbsp;&nbsp;<span class="tag">Cloud <i class="fas fa-cloud"></i></span>',
         "link": "https://github.com/tobywynne-mellor/kanye-sentiment-analysis"
+    },
+    {
+        "id": "?startac-calc",
+        "heading": "StarTAC Calculator",
+        "img": "images/startac.png",
+        "description": "A Javascript calculator with a lot of CSS. Design inspired by the Motorola StarTAC mobile phone.",
+        "details": '<span class="tag">Javascript <i class="fab fa-js-square"></i></span>&nbsp;&nbsp;<span class="tag">CSS <i class="fab fa-css3-alt"></i></span>',
+        "link": "https://codepen.io/jirugi/full/jLdGYq/"
+    },
+    {
+        "id": "?weather-app",
+        "heading": "Weather App",
+        "img": "images/weather-app.png",
+        "description": "A Javascript Weather App. Get data from Google Location API and pulling weather data from Dark Sky Weather API.",
+        "details": '<span class="tag">Javascript <i class="fab fa-js-square"></i></span>&nbsp;&nbsp;<span class="tag">CSS <i class="fab fa-css3-alt"></i></span>',
+        "link": "https://codepen.io/jirugi/full/XgXyeo"
+    },
+    {
+        "id": "?wiki-viewer",
+        "heading": "Wiki Viewer",
+        "img": "images/wiki-viewer.png",
+        "description": "A Javascript Wiki Search Interface. Get data from Wiki API.",
+        "details": '<span class="tag">Javascript <i class="fab fa-js-square"></i></span>&nbsp;&nbsp;<span class="tag">CSS <i class="fab fa-css3-alt"></i></span>',
+        "link": "https://codepen.io/jirugi/full/gRrXVm/"
     }
 ];
 console.log("project: " + param);

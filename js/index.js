@@ -22,3 +22,5 @@ $(window).scroll(function () {
 });
 
 $(function(){$(".scroller").click(function(){$("html,body").animate({scrollTop:$("html").offset().top},"1000");return false})})
+
+
