@@ -9,7 +9,7 @@ switch ($request_uri[0]) {
         header('Location: http://tobywynnemellor.com');
         break;
     // carif page
-    case '/careif':
+    case '/careif22':
         header('Location: https://tobywynne-mellor.github.io/careif.html');
         break;
     //projects page
