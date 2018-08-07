@@ -5,7 +5,7 @@ div {
 }
 
 
-.about, .projects, .contact {
+.about, .projects, .contact, .portfolio {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #eee;
   padding: 15px;
@@ -78,7 +78,7 @@ div {
 
 }
 
-.about:hover, .projects:hover, .services:hover, .contact:hover  {
+.about:hover, .projects:hover, .portfolio:hover, .contact:hover  {
   transform: scale(1.01);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
