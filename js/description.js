@@ -20,7 +20,7 @@ var projects = [
         "heading": "Queen Mary Business and Enterprise Society Website",
         "img": "images/qmbes.png",
         "description": "I developed the QMBES website.",
-        "details": '<span class="tag">MySQL <i class="<i class="fas fa-database"></i></span>&nbsp;&nbsp;<span class="tag">PHP <i class="fab fa-php"></i></span>',
+        "details": '<span class="tag">MySQL <i class="fas fa-database"></i></span>&nbsp;&nbsp;<span class="tag">PHP <i class="fab fa-php"></i></span>',
         "link": "https://qmbes.com"
     },
     {
