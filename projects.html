@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123036931-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123036931-1');
+  </script>
   <meta charset="UTF-8">
   <title>Portfolio 3.0</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +20,9 @@
     crossorigin="anonymous">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
   <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 
 <body>
@@ -22,7 +34,8 @@
     <div class="container">
       <div class="profile" id="instafeed">
         <h1 class="name1">Toby</h1>
-        <h1 class="name2">Wynne-Mell<span id="or">or</span>
+        <h1 class="name2">Wynne-Mell
+          <span id="or">or</span>
         </h1>
         <p class="email">tobywynnemellor@gmail.com</p>
         <img id="profilepic" src="https://pbs.twimg.com/profile_images/874363185003888642/PMEhfUG-_400x400.jpg" alt="">
@@ -61,22 +74,22 @@
           </div>
         </a>
         <a href="description?qmbes">
-            <div class="item">
-              <div class="item-text">
-                <h5>QMBES Website</h5>
-                <p class="text-muted">The Queen Mary Business and Enterprise Society website.</p>
-                <span class="tag">MySQL
-                  <i class="fas fa-database"></i>
-                </span>&nbsp;&nbsp;
-                <span class="tag">PHP
-                  <i class="fab fa-php"></i>
-                </span>
-              </div>
-              <div class="fill">
-                <img class="item-img" src="images/qmbes.png" alt="">
-              </div>
+          <div class="item">
+            <div class="item-text">
+              <h5>QMBES Website</h5>
+              <p class="text-muted">The Queen Mary Business and Enterprise Society website.</p>
+              <span class="tag">MySQL
+                <i class="fas fa-database"></i>
+              </span>&nbsp;&nbsp;
+              <span class="tag">PHP
+                <i class="fab fa-php"></i>
+              </span>
             </div>
-          </a>
+            <div class="fill">
+              <img class="item-img" src="images/qmbes.png" alt="">
+            </div>
+          </div>
+        </a>
         <a href="description?stock-trading-simulator">
           <div class="item">
             <div class="item-text">
@@ -131,39 +144,39 @@
           </div>
         </a>
         <a href="description?wiki-viewer">
-            <div class="item">
-              <div class="item-text">
-                <h5>Wiki Viewer</h5>
-                <p class="text-muted">A Javascript Wiki Search Interface.</p>
-                <span class="tag">Javascript
-                  <i class="fab fa-js-square"></i>
-                </span>&nbsp;&nbsp;
-                <span class="tag">CSS
-                  <i class="fab fa-css3-alt"></i>
-                </span>
-              </div>
-              <div class="fill">
-                <img class="item-img" src="images/wiki-viewer.png" alt="">
-              </div>
+          <div class="item">
+            <div class="item-text">
+              <h5>Wiki Viewer</h5>
+              <p class="text-muted">A Javascript Wiki Search Interface.</p>
+              <span class="tag">Javascript
+                <i class="fab fa-js-square"></i>
+              </span>&nbsp;&nbsp;
+              <span class="tag">CSS
+                <i class="fab fa-css3-alt"></i>
+              </span>
             </div>
-          </a>
-          <a href="description?random-quote-generator">
-              <div class="item">
-                <div class="item-text">
-                  <h5>Random Quote Generator</h5>
-                  <p class="text-muted">A Javascript Random Quote Generator.</p>
-                  <span class="tag">Javascript
-                    <i class="fab fa-js-square"></i>
-                  </span>&nbsp;&nbsp;
-                  <span class="tag">CSS
-                    <i class="fab fa-css3-alt"></i>
-                  </span>
-                </div>
-                <div class="fill">
-                  <img class="item-img" src="images/random-quote-generator.png" alt="">
-                </div>
-              </div>
-            </a>
+            <div class="fill">
+              <img class="item-img" src="images/wiki-viewer.png" alt="">
+            </div>
+          </div>
+        </a>
+        <a href="description?random-quote-generator">
+          <div class="item">
+            <div class="item-text">
+              <h5>Random Quote Generator</h5>
+              <p class="text-muted">A Javascript Random Quote Generator.</p>
+              <span class="tag">Javascript
+                <i class="fab fa-js-square"></i>
+              </span>&nbsp;&nbsp;
+              <span class="tag">CSS
+                <i class="fab fa-css3-alt"></i>
+              </span>
+            </div>
+            <div class="fill">
+              <img class="item-img" src="images/random-quote-generator.png" alt="">
+            </div>
+          </div>
+        </a>
       </div>
 
       <a class="btn btn-light arrow" href="javascript:history.back()">
