@@ -25,59 +25,79 @@
 </head>
 
 <body>
-    <div class="scroller">
-      <i class="fas fa-arrow-up"></i>
+  <div class="scroller">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <div class="container">
+    <div class="profile" id="instafeed">
+      <h1 class="name1">Toby</h1>
+      <h1 class="name2">Wynne-Mell
+        <span id="or">or</span>
+      </h1>
+      <p class="email">tobywynnemellor@gmail.com</p>
+      <img id="profilepic" src="https://pbs.twimg.com/profile_images/874363185003888642/PMEhfUG-_400x400.jpg" alt="">
+      <a target="_blank" href="https://www.instagram.com/tobywynnemellor/" class="btn instaBtn">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
-    <div class="container">
-      <div class="profile" id="instafeed">
-        <h1 class="name1">Toby</h1>
-        <h1 class="name2">Wynne-Mell<span id="or">or</span>
-        </h1>
-        <p class="email">tobywynnemellor@gmail.com</p>
-        <img id="profilepic" src="https://pbs.twimg.com/profile_images/874363185003888642/PMEhfUG-_400x400.jpg" alt="">
-        <a target="_blank" href="https://www.instagram.com/tobywynnemellor/" class="btn instaBtn">
-          <i class="fab fa-instagram"></i>
+    <a class="btn btn-light arrow" href="javascript:history.back()">
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </a>
+
+    <div class="about">
+      <h1>
+        <a target="_blank" class="project-link" href="https://www.linkedin.com/in/tobywynne-mellor">
+          <i class="fab fa-linkedin aboutIcon"></i>
+        </a>
+      </h1>
+      <img src="images/me.png" alt="" class="me">
+      <h4 class="text-muted">Currently</h4>
+      <p>I'm
+        <span id="age"></span> years old and studying computer science in London (2nd year). I have an interest in entrepreneurship and
+        technology. Within computer science I am fascinated by the advancement in AI and it's use cases.</p>
+      <h4 class="text-muted">Things I've had a go at...</h4>
+      <p class="text-muted">
+        <ul>
+          <li>3 Day StartUp Bootcamp</li>
+          <p>I started the weekend with an Idea, I then formed a team around me and pitched it to a panel of business experts.
+            I learnt about customer discovery and rapid prototyping, how develop a lean canvas and how to pitch. Throughout
+            the process I had the opportunity to network with mentors and gain invaluable advice for my business idea.</p>
+          <li>Queen Mary Business and Enterprise InQUBEate Program</li>
+          <p>In this 8 week program I continued the development of my business from the 3 Day Startup Bootcamp. Networking with
+            even more Mentors.</p>
+          <li>Try It Award</li>
+          <p>Here I took my business even futher when my team and I applied for funding from our University's careers and enterprise
+            department. In this process we had to fill in a huge application form detailing every part of the business. We
+            then had to produce a
+            <a href="https://www.youtube.com/watch?v=bC5rLJ7Xzwc" class="linkInText">2 minute video</a> to accompany the application. The application was successfull and we were then onto the next
+            stage where we had to perform a 5 minute pitch and then have a 30 minute discussion with the judges. We were
+            in successfull in achieving the "Try It award" funding. We're still working on this business and using the money
+            to help us.</p>
+        </ul>
+      </p>
+    </div>
+
+    <a class="btn btn-light arrow" href="javascript:history.back()">
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </a>
+
+
+    <div class="contact" id="contact">
+      <div class="social">
+        <a href="mailto:tobywynnemellor@gmail.com" class="button">Email
+          <i class="fas fa-envelope-square"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/tobywynne-mellor" class="button">LinkedIn
+          <i class="fab fa-linkedin"></i>
         </a>
       </div>
-      <a class="btn btn-light arrow" href="javascript:history.back()">
-        <i class="fas fa-long-arrow-alt-left"></i>
-      </a>
-
-      <div class="about">
-        <img src="images/me.png" alt="" class="me">
-        <h4 class="text-muted">Awards/Recognition</h4>
-        <p class="text-muted">
-          <ul>
-            <li>3 Day StartUp Bootcamp</li>
-            <p>I started the weekend with an Idea, I then formed a team around me and pitched it to a panel of business experts.
-              I learnt about customer discovery and rapid prototyping, how develop a lean canvas and how to pitch. Throughout
-              the process I had the opportunity to network with mentors and gain invaluable advice for my business idea.</p>
-            <li>Queen Mary Business and Enterprise InQUBEate Program</li>
-            <p>In this 8 week program I continued the development of my business from the 3 Day Startup Bootcamp. Networking
-              with even more Mentors.</p>
-            <li>Try It Award</li>
-            <p></p>
-          </ul>
-        </p>
-      </div>
-
-      <a class="btn btn-light arrow" href="javascript:history.back()">
-        <i class="fas fa-long-arrow-alt-left"></i>
-      </a>
-
-
-      <div class="contact" id="contact">
-        <div class="social">
-          <a href="mailto:tobywynnemellor@gmail.com" class="button">Email
-            <i class="fas fa-envelope-square"></i>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/tobywynne-mellor" class="button">LinkedIn
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
     </div>
+
+  </div>
+  <footer class="text-center">
+    Toby Wynne-Mellor &copy;
+    <span id="year"></span>
+  </footer>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
@@ -86,8 +106,22 @@
   <script src="js/index.js"></script>
   <script src="js/instafeed.min.js"></script>
   <script src="js/custom.js"></script>
+  <script>
 
+    var age = document.getElementById("age");
+    var year = document.getElementById("year");
+    var bday = new Date(1998, 09, 06, 00, 00, 00);
 
+    function timeSince(date) {
+      var seconds = Math.floor((new Date() - date) / 1000);
+      var interval = Math.floor(seconds / 31536000);
+      return interval;
+    }
+
+    year.innerHTML = new Date().getFullYear();
+    age.innerHTML = timeSince(bday);
+
+  </script>
 
 
 </body>

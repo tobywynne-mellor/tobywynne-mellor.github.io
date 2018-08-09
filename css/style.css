@@ -42,19 +42,18 @@ div {
   font-family: monospace;
   font-size: 1.65rem;
   font-weight: 700;
-  top: -20px;
+  top: -30px;
   border-radius: 10px;
   position: absolute;
   background-color: #ffeb3b;
-  padding: 5px;
+  padding: 10px;
   transition: all 0.3s ease-in-out;
+  left: -15px;
 }
 
 .projects::before{
   background-color: #ffeb3b;
   content: 'Projects';
-  left: -10px;
-  
 }
 
 .projects:hover::before, .contact:hover::before, .about:hover::before  {
@@ -67,20 +66,17 @@ div {
   background-color: #49C5B6;
   color: #eee;
   content: 'About me';
-  left: -10px;
 }
 
 .contact::before {
   background-color:#f44336;
   color: #eee;
   content: 'Contact';
-  left: -10px;
-
 }
 
 .about:hover, .projects:hover, .portfolio:hover, .contact:hover  {
-  transform: scale(1.01);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.001);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
 }
 
 .button {
@@ -100,12 +96,14 @@ div {
 .button:active {
   background-color: #285AEB;
   color: #eee;
+  text-decoration: none;
 }
 
 .button:hover {
   transform: scale(1.1);
   background-color: #285AEB;
   color: #eee;
+  text-decoration: none;
 }
 
 body {
@@ -173,11 +171,6 @@ body {
   left: -57px;
 }
 
-a:link, a:visited, a:hover, a:active {
-  color: black;
-  text-decoration: none;
-}
-
 .profile {
   height: 130px;
   left: 50%;
@@ -185,6 +178,16 @@ a:link, a:visited, a:hover, a:active {
   position: relative;
   margin: 30px 0 30px 0;
   width: 200px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: black;
+}
+
+.project-link:link, .project-link:visited, .project-link:hover, .project-link:active{
+  text-decoration: none;
+  color: black;
 }
 
 #profilepic {
@@ -280,29 +283,28 @@ a:link, a:visited, a:hover, a:active {
   }
 } */
 
-.fa-codepen, .fa-github {
+.fa-codepen, .fa-github, .aboutIcon {
   transition: all 0.1s ease-in-out;
   position: absolute;
+  top: -23px; 
+}
+
+.aboutIcon {
+  left: 120px;
 }
 
 .fa-codepen{
-  left: 110px;
-  top: -17px; 
+  left: 120px;
 }
 
 .fa-github {
-  left: 161px;
-  top: -17px; 
+  left: 171px;
 }
 
 
-.fa-codepen:hover, .fa-github:hover {
+.fa-codepen:hover, .fa-github:hover, .aboutIcon:hover {
   opacity: 0.7 !important;
   transform: scale(1.1);
-}
-
-.projects:hover h1 a i.fa-codepen, .projects:hover h1 a i.fa-github{
-  opacity: 1;
 }
 
 .item {
