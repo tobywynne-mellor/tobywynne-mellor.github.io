@@ -16,7 +16,7 @@ div {
   position:relative;
   max-width: 600px;
   margin: 50px auto;
-  padding-top: 45px;
+  padding-top: 37px;
 }
 
 @keyframes float {
@@ -200,6 +200,10 @@ body {
 }
 
 
+.blue {
+  color:#1a76d2!important;
+}
+
 #or{
   color: #f4f7f6;
   z-index: 1000;
@@ -381,10 +385,6 @@ body {
   opacity: 0;
   transform: translateY(-40px);
   transition: all 0.3s ease-in-out;
-}
-
-footer {
-  margin: auto;
 }
 
 div.about h1 a.project-link {
