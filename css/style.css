@@ -7,7 +7,7 @@ div {
 }
 
 
-.about, .projects, .contact, .portfolio {
+.about, .projects, .contact {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #eee;
   padding: 15px;
@@ -16,6 +16,7 @@ div {
   position:relative;
   max-width: 600px;
   margin: 50px auto;
+  padding-top: 45px;
 }
 
 @keyframes float {
@@ -45,12 +46,13 @@ div {
   font-size: 1.4rem;
   font-weight: 700;
   top: -30px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   position: absolute;
   background-color: #ffeb3b;
   padding: 10px;
   transition: all 0.3s ease-in-out;
-  left: -15px;
+  left: 0px;
+  width: 100%;
 }
 
 .projects::before{
@@ -58,14 +60,10 @@ div {
   content: 'Projects';
 }
 
-.projects:hover::before, .contact:hover::before, .about:hover::before  {
-  transform: scale(1.05);
-  /* font-size: 1.45rem; */
-  /* animation: float 2s infinite; */
-}
+
 
 .about::before {
-  background-color: #49C5B6;
+  background-color: #1976d2;
   color: #eee;
   content: 'About me';
 }
@@ -87,7 +85,7 @@ div {
   background-color:#ffeb3b;
   border-radius: 5px;
   padding: 10px;
-  border-color: #285AEB;
+  border-color: #1976d2;
   border-style: solid;
   color: #eee;
   border-width: 0px 3px 3px 0px;
@@ -96,14 +94,14 @@ div {
 }
 
 .button:active {
-  background-color: #285AEB;
+  background-color: #1976d2;
   color: #eee;
   text-decoration: none;
 }
 
 .button:hover {
   transform: scale(1.1);
-  background-color: #285AEB;
+  background-color: #1976d2;
   color: #eee;
   text-decoration: none;
 }
@@ -116,7 +114,7 @@ body {
 .tag {
   background-color: #f4f7f6;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 /* .container {
@@ -178,7 +176,7 @@ body {
   left: 50%;
   transform: translateX(-120px);
   position: relative;
-  margin: 30px 0 30px 0;
+  margin: 30px 0 10px 0;
   width: 200px;
 }
 
@@ -292,15 +290,15 @@ body {
 }
 
 .aboutIcon {
-  left: 130px;
+  right: 10px;
 }
 
 .fa-codepen{
-  left: 130px;
+  right: 61px;
 }
 
 .fa-github {
-  left: 181px;
+  right: 10px;
 }
 
 
@@ -346,11 +344,11 @@ body {
   width: 110px;
   margin-left: 10px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .item {
   margin: auto;
-  margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
 }
@@ -387,4 +385,8 @@ body {
 
 footer {
   margin: auto;
+}
+
+div.about h1 a.project-link {
+  color: white;
 }
