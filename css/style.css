@@ -79,30 +79,32 @@ div {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
 }
 
+.portfolio {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 10px;
+}
+
 .button {
   font-size: 1rem;
   font-weight: 600;
   background-color:#ffeb3b;
   border-radius: 5px;
   padding: 10px;
-  border-color: #1976d2;
-  border-style: solid;
-  color: #eee;
-  border-width: 0px 3px 3px 0px;
   transition: all 0.3s ease;
   color: #222;
+  box-shadow: 4px 6px #1976d2;
 }
 
 .button:active {
-  background-color: #1976d2;
-  color: #eee;
   text-decoration: none;
+  box-shadow: 3px 3px #1976d2;
+  transform: translate(1px,3px);
 }
 
 .button:hover {
-  transform: scale(1.1);
-  background-color: #1976d2;
-  color: #eee;
+  color: #222;
+  background-color:hsla(54, 100%, 50%, 1);
   text-decoration: none;
 }
 
@@ -173,11 +175,10 @@ body {
 
 .profile {
   height: 130px;
-  left: 50%;
-  transform: translateX(-120px);
   position: relative;
   margin: 30px 0 10px 0;
   width: 200px;
+  margin: 10px auto;
 }
 
 .project-link {
@@ -242,24 +243,18 @@ body {
   top: 50px;
   opacity: 0;
   transition: opacity 0.6s ease;
-  background: #d6249f;
-  border: #d6249f;
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   border-radius: 15px;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background-color: #f4f7f6;
   transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .instaBtn:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
-.instaBtn:active{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
-} 
-
 .instaBtn i {
-  color: white;
+  color: rgb(33, 37, 41);
   font-size: 30px;
   margin-left: -2.5px;
 }
