@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="200"
+   viewBox="0 0 200 200"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="cardback.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1222"
+     inkscape:window-height="687"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="1.907513"
+     inkscape:cx="31.087064"
+     inkscape:cy="106.3132"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg20"
+     showguides="false" />
+  <rect
+     x="-3.4905274"
+     y="-4.763494"
+     style="fill:#dc143c;stroke-width:1.39818478px"
+     id="e2_rectangle"
+     width="212.43094"
+     height="209.97391"
+     rx="14.145139"
+     ry="13.820442" />
+  <path
+     d="M 46.252136,-2.8570474 A 29902.554,28545.167 0 0 0 197.24462,147.49419"
+     style="fill:none;stroke:#ffffff;stroke-width:1.27177262px"
+     id="e4_circleArc"
+     inkscape:connector-curvature="0" />
+  <text
+     dy="-0.5em"
+     style="font-size:20px;font-family:Arial;fill:#000000"
+     id="e6_texte" />
+  <path
+     d="M 1.7712662,-0.5504411 A 60999.362,59867.456 0 0 0 203.66851,201.51128"
+     style="fill:none;stroke:#ffffff;stroke-width:1.31588995px"
+     id="e3_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M -0.04220163,53.269112 A 19790.85,18961.792 0 0 0 155.70424,203.80015"
+     style="fill:none;stroke:#ffffff;stroke-width:1.33727503px"
+     id="e1_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 3.4472018,98.485652 A 2288.8051,2423.9722 0 0 1 97.045827,200.61564"
+     style="fill:none;stroke:#ffffff;stroke-width:1.45943558px"
+     id="e2_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 97.627415,2.1065347 A 1445.6781,1256.9127 0 0 1 198.02985,103.25518"
+     style="fill:none;stroke:#ffffff;stroke-width:1.48600566px"
+     id="e5_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 200.93433,-1.5381319 A 7420.4972,7468.5433 0 0 0 3.8678103,196.80436"
+     style="fill:none;stroke:#ffffff;stroke-width:1.28378868px"
+     id="e6_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 150.61253,3.1644275 A 3087.0181,3209.9188 0 0 1 4.0782697,152.90551"
+     style="fill:none;stroke:#ffffff;stroke-width:1.28812683px"
+     id="e7_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 97.627415,2.1065347 A 13787.694,15050.246 0 0 0 3.4472018,98.485652"
+     style="fill:none;stroke:#ffffff;stroke-width:1.22997332px"
+     id="e8_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 207.27358,47.522473 A 29347.31,27789.843 0 0 0 40.510333,202.73621"
+     style="fill:none;stroke:#ffffff;stroke-width:1.38699007px"
+     id="e9_circleArc"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 197.21089,96.716985 A 2764.3027,2867.3402 0 0 0 97.045827,200.61564"
+     style="fill:none;stroke:#ffffff;stroke-width:1.45735395px"
+     id="e10_circleArc"
+     inkscape:connector-curvature="0" />
+</svg>
