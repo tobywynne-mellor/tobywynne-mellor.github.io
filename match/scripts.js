@@ -15,8 +15,8 @@ function splashscreens(){
   });
 } 
 
-// splashscreens();
-skip();
+splashscreens();
+// skip();
 function displayNone(elem){
   elem.style.opacity = 0;
   setTimeout(function(){
