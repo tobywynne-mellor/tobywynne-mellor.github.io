@@ -13,7 +13,7 @@ function splashscreens(){
     document.querySelector('.startButton').style.transform = 'scale(0)';
     displayNone(document.querySelector('.splash2'));
   });
-}
+} 
 
 splashscreens();
 // skip();
