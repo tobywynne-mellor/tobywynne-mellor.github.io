@@ -15,8 +15,8 @@ function splashscreens(){
   });
 } 
 
-splashscreens();
-// skip();
+// splashscreens();
+skip();
 function displayNone(elem){
   elem.style.opacity = 0;
   setTimeout(function(){
@@ -55,10 +55,18 @@ function flipCard() {
 
   checkForMatch();
 }
-
+for(i = 0; i <= 50; i++){
+  create(i);
+}
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
+  if(isMatch){
+    for(i = 0; i <= 50; i++){
+      drop(i);
+    }
+    var audio = new Audio('yippee.ogg');
+    audio.play();
+  }
   isMatch ? disableCards() : unflipCards();
 }
 
@@ -94,3 +102,43 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+function create(i) {
+  var width = Math.random() * 8;
+  var height = width * 0.4;
+  var colourIdx = Math.ceil(Math.random() * 3);
+  var colour = "red";
+  switch(colourIdx) {
+    case 1:
+      colour = "yellow";
+      break;
+    case 2:
+      colour = "blue";
+      break;
+    default:
+      colour = "red";
+  }
+  $('<div class="confetti-'+i+' '+colour+'"></div>').css({
+    "width" : width+"px",
+    "height" : height+"px",
+    "top" : -Math.random()*20+"%",
+    "left" : Math.random()*100+"%",
+    "opacity" : Math.random()+0.5,
+    "transform" : "rotate("+Math.random()*360+"deg)"
+  }).appendTo('body');  
+}
+
+function drop(x) {
+  $('.confetti-'+x).animate({
+    top: "100%",
+    left: "+="+Math.random()*15+"%"
+  }, Math.random()*3000 + 3000, function() {
+    reset(x);
+  });
+}
+
+function reset(x) {
+  $('.confetti-'+x).css({
+    "top" : -Math.random()*20+"%",
+    "left" : Math.random()*100+"%"
+  }, 0);
+}

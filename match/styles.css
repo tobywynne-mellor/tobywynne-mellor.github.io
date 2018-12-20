@@ -134,3 +134,19 @@ body {
 .front-face {
     transform: rotateY(180deg);
 }
+
+[class|="confetti"] {
+    position: absolute;
+  }
+  
+  .red {
+    background-color: #E94A3F;
+  }
+  
+  .yellow {
+    background-color: #FAA040;
+  }
+  
+  .blue {
+    background-color: #5FC9F5;
+  }
