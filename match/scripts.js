@@ -1,3 +1,4 @@
+var audio = new Audio('music.mp3');    
 function splashscreens(){
 
   setTimeout(function(){
@@ -7,12 +8,12 @@ function splashscreens(){
   setTimeout(function(){
     displayNone(document.querySelector('.splash'));
   }, 2500)
-
+  
   const startButton = document.querySelector('.startButton');
   startButton.addEventListener('click', function(){
     document.querySelector('.startButton').style.transform = 'scale(0)';
     displayNone(document.querySelector('.splash2'));
-    var audio = new Audio('music.mp3');
+    
     audio.loop = true;
     audio.play();
   });
@@ -61,18 +62,24 @@ function flipCard() {
 for(i = 0; i <= 100; i++){
   create(i);
 }
+
+var yip = new Audio('yippee.ogg');
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   if(isMatch){
     for(i = 0; i <= 100; i++){
       drop(i);
     }
-    var yip = new Audio('yippee.ogg');
+    
+    audio.pause();
     yip.play();
+    audio.play();
     counter = counter + 1;
     if (counter == 6){congrats()}
+    disableCards()
+  }else{
+    unflipCards()
   }
-  isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {

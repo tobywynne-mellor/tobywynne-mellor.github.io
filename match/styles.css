@@ -9,7 +9,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Apercu Mono';
     font-weight: 300;
     font-style: normal;
@@ -22,6 +23,8 @@ p {
 
 body {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: rgb(0,108,181);
     background-size: cover;
@@ -33,11 +36,22 @@ body {
     height: 100%;
     z-index: 5;
     position: absolute;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .splash2{
@@ -46,11 +60,22 @@ body {
     height: 100%;
     z-index: 2;
     position: absolute;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .black {
@@ -59,6 +84,8 @@ body {
     width: 100%;
     position: absolute;
     height: 100%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -77,16 +104,30 @@ body {
 }
 
 .startButton {
-    animation: pulse 1s linear 2s infinite alternate;
+    -webkit-animation: pulse 1s linear 2s infinite alternate;
+            animation: pulse 1s linear 2s infinite alternate;
     cursor: pointer;
+}
+
+@-webkit-keyframes pulse{
+    0% {
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
 }
 
 @keyframes pulse{
     0% {
-        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
     }
     100% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
@@ -94,32 +135,137 @@ body {
 
 .memory-game {
     margin: auto;
+    display: -ms-grid;
     display: grid;
     grid-gap: 10px 10px;
+    -ms-grid-columns: auto 10px auto 10px auto 10px auto;
     grid-template-columns: auto auto auto auto;
+    -ms-grid-rows: auto 10px auto 10px auto;
     grid-template-rows: auto auto auto;
-    justify-content: center;
-    align-content: center;
-    perspective: 1000px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+}
+
+
+
+.memory-game > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+
+
+.memory-game > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+
+
+.memory-game > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+
+
+.memory-game > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+}
+
+
+
+.memory-game > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+
+
+.memory-game > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+
+
+.memory-game > *:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+
+
+.memory-game > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+}
+
+
+
+.memory-game > *:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+
+
+.memory-game > *:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+
+
+
+.memory-game > *:nth-child(11) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+}
+
+
+
+.memory-game > *:nth-child(12) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
 }
 
 .memory-card {
     height: 20vmin;
     width: 20vmin;
     position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
     transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
     display: block;
 }
 
 .memory-card:active {
-    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+        -ms-transform: scale(0.97);
+            transform: scale(0.97);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
     transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
 }
 
 .memory-card.flip {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .front-face, .back-face {
@@ -128,12 +274,14 @@ body {
     position: absolute;
     border-radius: 10px;
     background: #1C7CCC;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     border: white solid 3px;
 }
 
 .front-face {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 [class|="confetti"] {
@@ -153,14 +301,21 @@ body {
   }
 
   .congrats {
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     height: 100%;
     width: 100%;
     position: absolute;
     background-color: #F4F7F6;
     text-align: center;
     display: none;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
     opacity: 0;
     z-index: 3;
@@ -172,6 +327,7 @@ body {
   }
 
   .congrats h1{
-    animation: pulse 1s linear 2s infinite alternate;
+    -webkit-animation: pulse 1s linear 2s infinite alternate;
+            animation: pulse 1s linear 2s infinite alternate;
     cursor: pointer;
   }
