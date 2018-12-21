@@ -70,7 +70,7 @@ function checkForMatch() {
     var yip = new Audio('yippee.ogg');
     yip.play();
     counter = counter + 1;
-    if (counter == 1){congrats()}
+    if (counter == 6){congrats()}
   }
   isMatch ? disableCards() : unflipCards();
 }
