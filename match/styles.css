@@ -150,3 +150,27 @@ body {
   .blue {
     background-color: #5FC9F5;
   }
+
+  .congrats {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #F4F7F6;
+    text-align: center;
+    display: none;
+    transition: all 1s ease;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .congrats a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .congrats h1{
+    animation: pulse 1s linear 2s infinite alternate;
+    cursor: pointer;
+  }

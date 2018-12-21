@@ -12,6 +12,9 @@ function splashscreens(){
   startButton.addEventListener('click', function(){
     document.querySelector('.startButton').style.transform = 'scale(0)';
     displayNone(document.querySelector('.splash2'));
+    var audio = new Audio('music.mp3');
+    audio.loop = true;
+    audio.play();
   });
 } 
 
@@ -35,6 +38,7 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let counter = 0;
 
 function flipCard() {
   if (lockBoard) return;
@@ -46,7 +50,6 @@ function flipCard() {
     // first click
     hasFlippedCard = true;
     firstCard = this;
-
     return;
   }
 
@@ -55,17 +58,19 @@ function flipCard() {
 
   checkForMatch();
 }
-for(i = 0; i <= 50; i++){
+for(i = 0; i <= 100; i++){
   create(i);
 }
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   if(isMatch){
-    for(i = 0; i <= 50; i++){
+    for(i = 0; i <= 100; i++){
       drop(i);
     }
-    var audio = new Audio('yippee.ogg');
-    audio.play();
+    var yip = new Audio('yippee.ogg');
+    yip.play();
+    counter = counter + 1;
+    if (counter == 1){congrats()}
   }
   isMatch ? disableCards() : unflipCards();
 }
@@ -141,4 +146,11 @@ function reset(x) {
     "top" : -Math.random()*20+"%",
     "left" : Math.random()*100+"%"
   }, 0);
+}
+
+function congrats(){
+  document.querySelector('.congrats').style.display = "flex";
+  setTimeout(function(){
+    document.querySelector('.congrats').style.opacity = 1;
+  }, 2000);
 }
