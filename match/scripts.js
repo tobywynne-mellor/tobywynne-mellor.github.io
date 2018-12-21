@@ -63,7 +63,7 @@ for(i = 0; i <= 100; i++){
   create(i);
 }
 
-var yip = new Audio('yippee.ogg');
+var yip = new Audio('yippee.mp3');
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   if(isMatch){
