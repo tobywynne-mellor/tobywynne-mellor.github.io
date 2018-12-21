@@ -311,7 +311,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: #F4F7F6;
+    background-color: rgba(244,247,246, 0.9);
     text-align: center;
     display: none;
     -webkit-transition: all 1s ease;
