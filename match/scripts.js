@@ -1,6 +1,5 @@
 var audio = new Audio('music.mp3');    
 function splashscreens(){
-
   setTimeout(function(){
     displayNone(document.querySelector('.black'));
   }, 1000);
@@ -13,7 +12,6 @@ function splashscreens(){
   startButton.addEventListener('click', function(){
     document.querySelector('.startButton').style.transform = 'scale(0)';
     displayNone(document.querySelector('.splash2'));
-    
     audio.loop = true;
     audio.play();
   });
@@ -115,9 +113,9 @@ function resetBoard() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function create(i) {
-  var width = Math.random() * 8;
-  var height = width * 0.4;
-  var colourIdx = Math.ceil(Math.random() * 3);
+  var width = 12;
+  var height = width;
+  var colourIdx = Math.ceil(Math.random() * 4);
   var colour = "red";
   switch(colourIdx) {
     case 1:
@@ -126,16 +124,19 @@ function create(i) {
     case 2:
       colour = "blue";
       break;
+    case 3:
+      colour = "white";
+      break;
     default:
       colour = "red";
   }
   $('<div class="confetti-'+i+' '+colour+'"></div>').css({
     "width" : width+"px",
     "height" : height+"px",
-    "top" : -Math.random()*20+"%",
+    "top" : -Math.random()*30+"%",
     "left" : Math.random()*100+"%",
-    "opacity" : Math.random()+0.5,
-    "transform" : "rotate("+Math.random()*360+"deg)"
+    "transform" : "rotate("+Math.random()*360+"deg)",
+    "border-radius" : "10px"
   }).appendTo('body');  
 }
 

@@ -293,11 +293,15 @@ body {
   }
   
   .yellow {
-    background-color: #FAA040;
+    background-color: #ffe304;
   }
   
   .blue {
     background-color: #5FC9F5;
+  }
+
+  .white {
+    background-color: snow;
   }
 
   .congrats {
