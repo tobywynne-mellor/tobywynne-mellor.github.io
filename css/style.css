@@ -75,7 +75,7 @@ div {
 }
 
 .about:hover, .projects:hover, .portfolio:hover, .contact:hover  {
-  transform: scale(1.001);
+  /* transform: scale(1.001); */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
 }
 
@@ -188,6 +188,10 @@ body {
 .project-link:link, .project-link:visited, .project-link:hover, .project-link:active{
   text-decoration: none;
   color: black;
+}
+
+.descriptionImg {
+  max-height: 400px;
 }
 
 #profilepic {

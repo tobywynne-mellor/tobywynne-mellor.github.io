@@ -8,6 +8,22 @@ var link = document.getElementById('link');
 
 var projects = [
     {
+        "id": "?wavr",
+        "heading": "Wavr Weather App",
+        "img": "images/wavr.png",
+        "description": "A weather app for surfers built using ReactJS and SVG visualisations.",
+        "details": '<span class="tag">React <i class="fab fa-react"></i></span>&nbsp;&nbsp;<span class="tag">Node <i class="fab fa-node"></i></span>',
+        "link": "https://github.com/tobywynne-mellor/weather-app"
+    },
+    {
+        "id": "?makula",
+        "heading": "Makula Photo Editor",
+        "img": "images/makula.png",
+        "description": "A desktop photo editor for lightweight editing.",
+        "details": '<span class="tag">Desktop <i class="fas fa-desktop"></i></span>&nbsp;&nbsp;<span class="tag">Java <i class="fab fa-java"></i></span>',
+        "link": "https://github.com/tobywynne-mellor/makula-photo-editor"
+    },
+    {
         "id": "?stock-trading-simulator",
         "heading": "Stock Trading Simulator",
         "img": "images/trading.png",
@@ -65,10 +81,9 @@ var projects = [
     }
     
 ];
-console.log("project: " + param);
+
 for (var i = 0; i < projects.length; i++) {
     if (projects[i].id == param) {
-        console.log("project[i].id: " + projects[i].id);
         heading.innerHTML = projects[i].heading;
         img.src = projects[i].img;
         description.innerHTML = projects[i].description;
@@ -76,6 +91,3 @@ for (var i = 0; i < projects.length; i++) {
         link.href = projects[i].link;
     }
 }
-
-console.log("project: " + param);
-console.log("project[i].id: " + project[i].id);
