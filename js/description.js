@@ -83,6 +83,7 @@ var projects = [
 ];
 
 for (var i = 0; i < projects.length; i++) {
+    //testing
     if (projects[i].id == param) {
         heading.innerHTML = projects[i].heading;
         img.src = projects[i].img;
