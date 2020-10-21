@@ -318,7 +318,6 @@ body {
 }
 
 .item:hover {
-  transform: translateX(10px);
   opacity: 0.8;
 }
 
