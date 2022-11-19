@@ -60,8 +60,8 @@
       <h1 class="name1">Toby Wynne-Mellor</h1>
       <p class="email">tobywynnemellor@gmail.com</p>
     </div>
-    <h4 class="introText text-center">A design conscious developer currently studying and
-      <b>seeking a software engineering role</b>.</h4>
+    <h4 class="introText text-center">
+      <b>Full- Stack Software Engineer</b></h4>
     </div>
         <div class="about">
       <h1>
@@ -69,18 +69,15 @@
           <i class="fab fa-linkedin aboutIcon"></i>
         </a>
       </h1>
-      <p class="text-muted">
-        I'm
-          <span id="age"></span>
-         years old, in my second year of University...
-        <u>
-          <a href="/about">Read more</a>
-        </u>
+      <p>
+        I am currently working as a front-office full-stack software engineer at Ninety One. I spend most of my time writing microservices in Python and front-ends in Typescript with ReactJS.
       </p>
+      <p>Outside of work, I enjoy all things to do with food, sports and hacking.</p>
     </div>
     <div class="projects">
+      <p><a href="https://github.com/tobywynne-mellor/">My personal GitHub</a> is looking a bit bare at the moment but you can see some of my past projects there. I am quite busy on <a href="https://github.com/twynne-mellor">my work GitHub Account</a></p>
       <p class="text-center">
-      See my <a target="_blank" href="https://github.com/tobywynne-mellor/">GitHub</a> for more up to date projects.
+      
       </p>
       <h1>
         <a target="_blank" class="project-link" href="https://github.com/tobywynne-mellor/">
@@ -90,45 +87,6 @@
           <i class="fab fa-codepen"></i>
         </a>
       </h1>
-      <a class="project-link" href="/description?stock-trading-simulator">
-
-        <div class="item">
-          <div class="item-text">
-            <h5>Stock Trading Simulator </h5>
-            <p class="text-muted">An object-orientated desktop stock trading simulator in Java + JavaFX.</p>
-            <span class="tag">Java
-              <i class="fab fa-java"></i>
-            </span>&nbsp;&nbsp;
-            <span class="tag">Desktop
-              <i class="fas fa-desktop"></i>
-            </span>
-          </div>
-          <div class="fill">
-            <img class="item-img" src="images/trading.png"
-              alt="">
-          </div>
-        </div>
-      </a>
-      <a class="project-link" href="/description?kanye-sentiment-analysis">
-        <div class="item">
-          <div class="item-text">
-            <h5>Kanye Sentiment Analysis Twitter Bot</h5>
-            <p class="text-muted">I used Node, the Twitter API and IBM Wason Tone Analyzer API to analyse Kanye's tweets.</p>
-            <span class="tag">Node
-              <i class="fab fa-node"></i>
-            </span>&nbsp;&nbsp;
-            <span class="tag">Cloud
-              <i class="fas fa-cloud"></i>
-            </span>
-          </div>
-          <div class="fill">
-            <img class="item-img" src="images/kanye.png" alt="">
-          </div>
-        </div>
-      </a>
-      <div class="social">
-        <a href="/projects" class="button">All Projects</a>
-      </div>
     </div>
 
 <div class="contact" id="contact">
@@ -156,26 +114,6 @@
   <script src="js/index.js"></script>
   <script src="js/instafeed.min.js"></script>
   <script src="js/custom.js"></script>
-
-  <script>
-
-    var age = document.getElementById("age");
-    var year = document.getElementById("year");
-    var bday = new Date(1998, 08, 06, 00, 00, 00);
-
-    function timeSince(date) {
-      var seconds = Math.floor((new Date() - date) / 1000);
-      var interval = Math.floor(seconds / 31536000);
-      return interval;
-    }
-
-    year.innerHTML = new Date().getFullYear();
-    age.innerHTML = timeSince(bday);
-
-  </script>
-
-
-
 </body>
 
 </html>
